@@ -7,7 +7,7 @@ public class CheckPrimeNumber {
 
     public static void main(String[] args) {
 
-        List<Integer> input = Arrays.asList(1, 2, 4, 6, 8, 10, 11, 12, 13, 14, 15);
+        List<Integer> input = Arrays.asList(1, 2, 3, 4, 6, 8, 10, 11, 12, 13, 14, 15);
 
         List<Integer> output = input.stream()
                 .filter(CheckPrimeNumber::isPrime)
