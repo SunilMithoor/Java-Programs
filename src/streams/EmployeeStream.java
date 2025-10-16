@@ -51,19 +51,19 @@ public class EmployeeStream {
                                 }
                         )));
 
-        output.forEach((dept,empList)->
+        output.forEach((dept, empList) ->
         {
-            empList.forEach(emp -> System.out.println("Dept-->" +emp.dept +",Name-->" +emp.name +",Salary-->" +emp.salary));
+            empList.forEach(emp -> System.out.println("Dept-->" + dept + ",Name-->" + emp.name + ",Salary-->" + emp.salary));
         });
 
     }
 
 
     static class Employee {
-        private int id;
-        private String name;
-        private String dept;
-        private double salary;
+        private final int id;
+        private final String name;
+        private final String dept;
+        private final double salary;
 
         public Employee(int id, String name, String dept, double salary) {
             this.id = id;
